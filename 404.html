@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <title>The web site of russellcf</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-</head>
-<body>
-    <div class="index">
-        <h2>Index</h2>
-
-        <p><a href="/index.html">Home</p>
-
-        <p><a href="/aboutme.html">About me</p>
-
-        <p><a href="/setup.html">My Personal Setups</a></p>
-
-        <p><a href="/repairs.html">Repairs and Mods</a></p>
-
-        <h2>Off-Site<br></h2>
-        <p><a href="https://github.com/zephyrel">My Github</a></p>
-
-        <div class="attributions">
-            <a href="https://www.freepik.com/free-photo/top-view-white-stripes-waves-deformed-bands-surface-with-soft-light-modern-bright-background_11221178.htm#query=website%20background%20pattern&position=16&from_view=search&track=ais">Background by GarryKillian</a>
-            <p></p>
-            <img src="/neocities.png">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pixelify+Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+      </head>
+    <body>
+    <!-- Start Index Sidebar/Topbar -->
+        <nav>
+            <menu class="index">
+                <div class="top">
+                <h2>Index</h2>
+                    <div class="home" onclick="goHome()"><p>Home</p></div>    
+                    <div class="about" onclick="goAbout()"><p>About me</p></div>
+                    <div class="setup" onclick="goSetups()"><p>My Personal Setup</p></div>  
+                    <div class="repairs" onclick="goRepairs()"><p>Repairs and Mods</p></div>
+                </div>
+                <div class="middle">
+                    <h2>Off-Site</h2>
+                    <div class="github">
+                        <img src="/web_art/github-mark.svg">
+                        <a href="https://github.com/zephyrel/landing">
+                        <p>My Github</p>
+                        </a>
+                    </div>
+                    <div class="facebook">
+                    <img src="/web_art/facebook.svg">
+                    <a href="https://www.facebook.com/profile.php?id=61551882521237">
+                        <p>Repairs</p>
+                    </a>
+                    </div>
+                </div>
+                <div class="bottom">
+                <div class="source">
+                    <a href="https://github.com/Zephyrel/ws_portfolioSite">
+                    <p>Source code</p>
+                    </a>
+                </div>
+                <div class="neocities">
+                <img src="/web_art/neocities.svg">
+                <a href="https://neocities.org/">
+                    <p>Hosted by Neocities</p>
+                </a>
+                </div>
+            </div>
+            </menu>
+        </nav><!-- End Index Sidebar/Topbar-->
+        
+        <div id="content" style="
+            text-align: center;
+            padding-right: 50px;
+            ">
+          <header>
+            <h1>Hey buddy, I think you've got the wrong door.</h1>
+            <h2>The club's two blocks down.</h2>
+          </header>
+          <main>
+            <div class="layout" style="padding-bottom: calc(20% + 500px);">
+                <p>404 you dingus.<br>Now what are you doing here?<br>You shouldn't be here!<br>Shoo!</p>
+            </div> 
+          </main>
         </div>
-
-    </div>
-
-    <div class="body2">
-        <h1>4 0 4</h1>
-        <p>Page not found. What are you doing here, typing in urls? Or was there just a typo?</p>
-
-    </div>
-</body>
+  </body>
 </html>

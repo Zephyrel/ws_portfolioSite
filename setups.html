@@ -1,46 +1,101 @@
 <!DOCTYPE html>
 <html>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <script src="scripts.js"></script>
+    <title>Russell Ferguson's Home Website and Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pixelify+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
   <body>
-    <div>
-      <h1>My Personal Home Systems, Network, and Workbench</h1>
-      <p>Pardon our dust. This website's still under construction.</p>
+    <div class="content">
+      <header>
+        <h1>My Systems, Tools and Environment</h1>
+      </header>
+        
+      <main>
+        <!--While testing, uncomment this dev and the html headers.
+        When finished, comment this div container back up,
+        and the backgrounds, and header files too.-->
 
-      <p>"My Personal Setups" is where you can learn about the equipment I use in my day-to-day. My computers' OS, specs and maintenance automations,<br>
-      my software development environment for coding various projects, and a graph of my home network.</p>
-      <p>Here, essentially. Though you can still read all about it below, I do need to bring over the documentation and more pictures of my work here.<br>
-      And I need to code the gallery script that can "blow up" the thumbnails in a nice fashion without redirecting you.</p>
-      
-      <p>My computer is a custom built PC running Windows 10 and Arch Linux side by side, still in a Cooler Master Haf X nearly a decade after the case's release. Oversized and<br>
-      made of steel, the case boasts high airflow with fans back, top, front and on the side, pushing ambient air to cool it in a roomy case with great cable management<br>
-      and ample space to work in, install accessories, and giving my monstrous GPU, CPU and 850w Power Supply room to breathe in.</p>
-      
-      <p>Motherboard: Asus Prime Z270-A. Mid-to-High end board designed for builders with overclocking goals and great cooling control.<br>
-      CPU: Intel i7-7700k (which was cutting edge... for 2017), delidded and with better thermal material. Noctua. TheCPU is cooled with a<br>
-      copper/aluminum heatsink and fan combo in the Cooler Master Hyper Evo 212, one I've used since the CPU has been on there.<br>
-      Despite tweaks, the CPU is decisively not overclocked over 4.5Ghz for the amount of heat in excess of 90°C that AVX2 stress tests generate.<br>
-      RAM: 2x16GB G.Skill Ripjaw RGB sticks, Hynix C-Die ICs, rated for DDR4-4000 at XMP, which it is running at, with a higher DRAM voltage manually set<br>
-      than what the XMP profile would set, for stability. The system was unstable with XMP, forcing me to manually step through the OC myself.<br>
-      Thankfully the sticks were good and they are running nicely, and not bottlenecking my GPU strongly.<br>
-      GPU: Its an Asus Tuf Gaming Nvidia RTX 4070 TI OC with 12GB VRAM. The newest and strongest part of my PC, it works very fine in my otherwise aging build.<br>
-      Storage: The rig is equipped with a 256GB Samsung SSD, and 2 7200RPM HDDs at 1TB and 4TB of storage. Not the most ideal but having a budget is important.<br>
-      My PC is additionally equipped with an Elgato HD Game Capture card to capture video footage of gameplay for streaming and recording purposes, as part of my hobbies.</p>
-      
-      <p>On the network side of things, I have gigabit fiber and use a robust Netgear Nighthawk, plus an unmanaged switch for my game consoles to run in a DMZ,<br>
-      to keep my apartment's network system running smooth altogether, and keeping me and my housemates' online gaming as low latency and lossless as possible by opening the NAT.<br>
-      Additionally, I have some ports forwarded to open the NAT for running servers on occasion for certain programs and hosting games for me and my friends' enjoyment.</p>
-      
-      <p>Other computer equipment I have is a performance laptop equipped with an Intel i7 and an Nvidia 1050TI, a Samsung Tab A7, and a Samsung Galaxy S9+ as my phone.</p>
-      
-      <p>On the hardware repair side of things: I am going to have to get back here on that after logging my tools.</p>
-      
-      <p>Here's a picture of a stress test on the RAM after an overclock to DDR4-4000 with the GPU, an Asus Tuf Gaming Nvidia RTX 4070 TI OC<br>
-      running in OCCT to generate load and produce heat, therefore testing the stability of the RAM in higher temps in a simulated gaming environment.
-      
-      <div class="screenshot">
-        <a href="https://i.imgur.com/dfXS2cw.png"><img src="https://i.imgur.com/dfXS2cwm.png" title="source: imgur.com" /></a>
-      </div>
-      
+        <div class="image">
+          <a href="/myPics/workstation.png">
+            <img src="/myPics/workstation.png"/>
+          </a>
+          <p>Description here.</p>
+          <a href="https://i.imgur.com/dfXS2cw.png">
+            <img src="https://i.imgur.com/dfXS2cw.png" title="source: imgur.com" />
+          </a>
+          <p>Description here.</p>
+          </div>
+        <!--I know this tagging is messy but this is a pass focusing on polishing
+          the text itself and I'm valuing speed of developing right now.
+          I can refactor the tags and css to be pretty with less code and work later.
+        -->
+        <div class="head">My primary workstation is a self-built desktop PC of several years, running
+          Windows 10 22H2 and Arch Linux through WSL (Windows Subsystem for Linux) side by side,
+          still in a Cooler Master Haf X nearly a decade after the case's release.</div>
+        
+        <div>
+          <li>
+            <div class="point">Motherboard:</div>
+            <p class="justify">Asus Prime Z270-A. Good OC Board.</p>
+          </li>
+        </div>
+          <li>
+            <div>
+              <div class="point">CPU:</div>
+              <p class="justify">Intel i7-7700k (near bleeding edge... for 2017). Delidded.</p>
+              </div>
+          </li>
+          <li>
+            <div>
+              <div class="point">RAM:</div>
+              <p class="justify">2x16GB G.Skill Ripjaw RGB. Hynix C-Die ICs. Overclocked @ DDR4-4000 1.4v
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <div class="point">GPU:</div>
+              <p class="justify">Asus Tuf Gaming Nvidia RTX 4070 TI OC, 12GB VRAM. The newest piece.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <div class="point">Storage:</div>
+              <p class="justify">A 256GB 2.5" Samsung SSD, and 2 7200RPM HDDs at 1TB and 4TB.\
+                Not ideal, but budgetary constraints.</p>
+            </div>
+          </li>
+          
+          <li>
+            <div>
+              <div class="point">Network:</div>
+              <p class="justify">Netgear Nighthawk and gigabit
+                fiber, plus an unmanaged switch for my game consoles. Netgear Nighthawk I've
+                flashed with openwrt to tinker and wake-on-lan, and have a dynamic DNS setup
+                to remote access my home devices with ease.</p>
+            </div>
+          </li>
+          
+          <li>
+            <div>
+              <div class="point">Other equipment:</div>
+              <p class="justify">Laptop with Intel i7 and an Nvidia 1050TI for portable work, a Samsung Tab
+                A7, and a Samsung Galaxy S9+ as my phone.
+              </p>
+            </li>
+        
+          <div class="footer">
+            <p class="indent">On the hardware repair side of things: I am going to have to get back here on that after logging my tools.
+              So as with most tech, this page is still a work in progress for now! But since you're here, why don't you pay a visit to my repairs page on facebook?
+            </p>
+          </div>
+      </main>
     </div>
   </body>
 </html>

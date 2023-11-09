@@ -7,7 +7,7 @@ module.exports = {
     // https: true,
     // browser: ['edge', 'chrome', 'firefox', 'chrome --incognito', 'firefox --incognito'],
     browser: ['C:\\Users\\zephy\\AppData\\Local\\Programs\\Opera GX\\launcher.exe'],
-    highlight: false,
+    highlight: true,
     injectBody: true,
     // watch: 'dev',
     // ignore: [/\.s[ac]ss$/i, /\.tsx?$/i],

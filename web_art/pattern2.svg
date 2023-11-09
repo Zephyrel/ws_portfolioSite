@@ -1,11 +1,7 @@
 <svg xmlns='http://www.w3.org/2000/svg' width='100%'>
 	<defs>
-		<linearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%' gradientTransform='rotate(30,939,485)'>
-			<stop offset='0' stop-color='#ffffff'/>
-			<stop offset='1' stop-color='#4FE'/>
-		</linearGradient>
 		<pattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'>
-			<g fill-opacity='0.15'><polygon fill='#444' points='90 150 0 300 180 300'/>
+			<g fill-opacity='0.06'><polygon fill='#444' points='90 150 0 300 180 300'/>
 				<polygon points='90 150 180 0 0 0'/><polygon fill='#AAA' points='270 150 360 0 180 0'/>
 				<polygon fill='#DDD' points='450 150 360 300 540 300'/>
 				<polygon fill='#999' points='450 150 540 0 360 0'/>
