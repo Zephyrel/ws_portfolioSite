@@ -100,6 +100,7 @@ div#content{
     font-size:1em;
     font-family: Titillium Web, sans-serif;
     font-weight:700;
+    text-shadow:1px -1px 2px black;
     background-color: rgba(0,0,0,0.60);
 
 }
@@ -267,6 +268,7 @@ nav {
     font-family: "Pixelify Sans", sans-serif;
     /*16px = 1em*/
     font-size: 1.25em;
+    text-shadow: 1px -1px 2px rgb(0 43 255 / 40%);
 
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
     border-right-style: solid;

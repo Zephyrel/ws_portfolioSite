@@ -4,6 +4,7 @@ TODO:
     Refine text.
     Establish anchored link tags and javascript that shows up in the url and loads the correct page.
         i.e. "/index.html#aboutme" should always load up the about me, and clicking "About Me" to change the page should update the url in the address bar.
+    (DONE) ~~Make Sidebar more media aware, make the sidebar a top bar on smaller width devices, i.e. mobile~~
 
     Add more pictures, create a gallery system I can slip into portions of the website.
 
