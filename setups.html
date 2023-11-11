@@ -7,94 +7,94 @@
     <title>Russell Ferguson's Home Website and Portfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pixelify+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <!--<link href="/style.css" rel="stylesheet" type="text/css" media="all">-->
   </head>
   <body>
     <div class="content">
       <header>
         <h1>My Systems, Tools and Environment</h1>
+        <div>My primary workstation is a self-built desktop PC of several years, running
+          Windows 10 22H2 and Arch Linux through WSL (Windows Subsystem for Linux) side by side,
+          still in a Cooler Master Haf X nearly a decade after the case's release.</div>
       </header>
         
       <main>
-        <!--While testing, uncomment this dev and the html headers.
-        When finished, comment this div container back up,
-        and the backgrounds, and header files too.-->
+        <div class="layout">
+          <div class="layout2">
+            <div class="list">
+              <li>
+                <div class="list-item">
+                  <div class="point">Motherboard:</div>
+                  <p>Asus Prime Z270-A. Good OC Board.</p>
+                </div>
+              </li>
 
-        <div class="image">
-          <a href="/myPics/workstation.png">
-            <img src="/myPics/workstation.png"/>
-          </a>
-          <p>Description here.</p>
-          <a href="https://i.imgur.com/dfXS2cw.png">
-            <img src="https://i.imgur.com/dfXS2cw.png" title="source: imgur.com" />
-          </a>
-          <p>Description here.</p>
+              <li>
+                <div class="list-item">
+                  <div class="point">CPU:</div>
+                  <p>Intel i7-7700k (near bleeding edge... for 2017). Delidded.</p>
+                  </div>
+              </li>
+              <li>
+                <div class="list-item">
+                  <div class="point">RAM:</div>
+                  <p>2x16GB G.Skill Ripjaw RGB. Hynix C-Die ICs. Overclocked @ DDR4-4000 1.4v
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="list-item">
+                  <div class="point">GPU:</div>
+                  <p>Asus Tuf Gaming Nvidia RTX 4070 TI OC, 12GB VRAM. The newest piece.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="list-item">
+                  <div class="point">Storage:</div>
+                  <p>A 256GB 2.5" Samsung SSD, and 2 7200RPM HDDs at 1TB and 4TB.\
+                    Not ideal, but budgetary constraints.</p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="list-item">
+                  <div class="point">Network:</div>
+                  <p>Netgear Nighthawk modem and router, seperate. Plus an unmanaged
+                    switch for my game consoles, ran in a DMZ by the router.
+                    The router I've flashed with openwrt to tinker with and for extra
+                    functionality, such as wake-on-lan through the "etherwake" package,
+                    as WoL only operates on Data Link Layer, or Layer 2, of the OSI model,
+                    which use Mac Addresses. I use these combined with a dynamic DNS setup
+                    to remote access, control, and use files from my home devices with ease.</p>
+                </div>
+              </li>
+              
+              <li>
+                <div class="list-item">
+                  <div class="point">Other equipment:</div>
+                  <p>Laptop with Intel i7 and an Nvidia 1050TI for portable work, a Samsung Tab
+                    A7, and a Samsung Galaxy S9+ as my phone.
+                  </p>
+                </div>
+              </li>
+              <p class="indent">On the hardware repair side of things: I am going to have to get back here on that after logging my tools.
+                So as with most tech, this page is still a work in progress for now! But since you're here, why don't you pay a visit to my repairs page on facebook?
+              </p>
+            </div>
+            
+            <div class="image">
+              <a href="/myPics/workstation.png">
+                <img src="/myPics/workstation.png"/>
+              </a><p>My Windows workstation with early development of this website, alongside a System summary, and a Tmux'd Shell with Powershell, Bash, Neovim and python app "gcalcli" for access to a google calendar all running within one shell.</p>
+              <a href="https://i.imgur.com/dfXS2cw.png">
+                <img src="https://i.imgur.com/dfXS2cw.png" title="source: imgur.com" />
+              </a><p>Stress testing a PC (mine) for stability on an overclock. Heat can make ram unstable, so it's best to run tests with the GPU and/or CPU running, generating heat during memory tests for practical stability.</p>
+            </div>
+            <footer>
+            </footer>
           </div>
-        <!--I know this tagging is messy but this is a pass focusing on polishing
-          the text itself and I'm valuing speed of developing right now.
-          I can refactor the tags and css to be pretty with less code and work later.
-        -->
-        <div class="head">My primary workstation is a self-built desktop PC of several years, running
-          Windows 10 22H2 and Arch Linux through WSL (Windows Subsystem for Linux) side by side,
-          still in a Cooler Master Haf X nearly a decade after the case's release.</div>
-        
-        <div>
-          <li>
-            <div class="point">Motherboard:</div>
-            <p class="justify">Asus Prime Z270-A. Good OC Board.</p>
-          </li>
         </div>
-          <li>
-            <div>
-              <div class="point">CPU:</div>
-              <p class="justify">Intel i7-7700k (near bleeding edge... for 2017). Delidded.</p>
-              </div>
-          </li>
-          <li>
-            <div>
-              <div class="point">RAM:</div>
-              <p class="justify">2x16GB G.Skill Ripjaw RGB. Hynix C-Die ICs. Overclocked @ DDR4-4000 1.4v
-              </p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div class="point">GPU:</div>
-              <p class="justify">Asus Tuf Gaming Nvidia RTX 4070 TI OC, 12GB VRAM. The newest piece.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div>
-              <div class="point">Storage:</div>
-              <p class="justify">A 256GB 2.5" Samsung SSD, and 2 7200RPM HDDs at 1TB and 4TB.\
-                Not ideal, but budgetary constraints.</p>
-            </div>
-          </li>
-          
-          <li>
-            <div>
-              <div class="point">Network:</div>
-              <p class="justify">Netgear Nighthawk and gigabit
-                fiber, plus an unmanaged switch for my game consoles. Netgear Nighthawk I've
-                flashed with openwrt to tinker and wake-on-lan, and have a dynamic DNS setup
-                to remote access my home devices with ease.</p>
-            </div>
-          </li>
-          
-          <li>
-            <div>
-              <div class="point">Other equipment:</div>
-              <p class="justify">Laptop with Intel i7 and an Nvidia 1050TI for portable work, a Samsung Tab
-                A7, and a Samsung Galaxy S9+ as my phone.
-              </p>
-            </li>
-        
-          <div class="footer">
-            <p class="indent">On the hardware repair side of things: I am going to have to get back here on that after logging my tools.
-              So as with most tech, this page is still a work in progress for now! But since you're here, why don't you pay a visit to my repairs page on facebook?
-            </p>
-          </div>
       </main>
     </div>
   </body>

@@ -11,9 +11,10 @@
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
+    
     <!-- Start Index Sidebar/Topbar -->
     <nav>
-        <menu class="index">
+        <menu id="index">
           <div class="top">
             <h2>Index</h2>
               <div class="home" onclick="goHome()"><p>Home</p></div>    
@@ -26,7 +27,7 @@
               <div class="github">
                   <img src="/web_art/github-mark.svg">
                   <a href="https://github.com/zephyrel/landing">
-                    <p>My Github</p>
+                    <p>Github</p>
                   </a>
               </div>
               <div class="facebook">
@@ -57,64 +58,77 @@
         <h1>Welcome to my Website and Portfolio.</h1>
         <h2> - Russell Ferguson</h2>
       </header>
+      
       <main>
         <div class="layout">
-          <div class="contact">
+          <div class="normal">
             <div>To contact me for business or employment :</div>
             <div class="indent">email : <div class="email1"><a id="a" href="#">russellcf (at) hotmail (dot) com</a></div></div>
             <div>If you are a customer seeking repair work, computer or networking services :</div>
             <div class="indent">Visit the Facebook page , OR</div>
-            <div class="indent">email : <div class="email2"><a id="b" href="#">231russellcf (at) gmail (dot) com</a></div></div>
+            <div class="indent">email : <div class="email2"><a id="b" href="#">231russellcf (at) gmail (dot) com</a></div>
+              <p class="indent">Welcome to my webpage. This is the home site of Russell Ferguson, computer and network technician, electronics repairperson, independent business owner,
+              hobbyist of many things, and future indie game developer.
+            
+              <p class="indent">If you've come to this website from Google through seeing a local business, from LinkedIn,
+              Indeed.com, or from my Resume, you've come to the right place. This is a central hub from
+              where I can host an assortment of professional works, and show you a little bit more about myself.</p>
+            </div>
           </div>
           <script>
             loadEmail();
           </script>
-          <div style="max-width: 700px;">
-            <p>Welcome to my webpage. This is the home site of Russell Ferguson, computer and network technician, electronics repairperson, independent business owner,
-              hobbyist of many things, and future indie game developer.
+          <div class="list">
+            <li>
+              <div class="list-item">
+                <div class="point">[ About Me ]</div>
+                <p class="justify">
+                Here you can learn about me, my education, a bit of my life and my interests.
+                </p>
+              </div>
+            </li>
             
-            <p>If you've come to this website from Google through seeing a local business, from LinkedIn,
-            Indeed.com, or from my Resume, you've come to the right place. This is a central hub from
-            where I can host an assortment of professional works, and show you a little bit more about myself.</p>
-          </div>
-          <div style="
-              display: inline-flex;
-              flex-direction: column;
-              width: 750px;
-            ">
-            <li><div>[ About Me ]</div><p class="justify">
-              Here you can learn about me, my education, a bit of my life and my interests.
-            </p></li>
+            <li>
+              <div class="list-item">
+                <div class="point">[ My Setups ]</div>
+                <p class="justify">
+                  Where you can learn about the equipment I use in my day-to-day.
+                  My computers' OS, specs and maintenance automations, my software development
+                  environment for coding various projects, and a graph of my home network.
+                </p>
+              <div class="list-item">
+            </li>
             
-            <li><div>[ My Setups ]</div><p class="justify">
-            Where you can learn about the equipment I use in my day-to-day.
-            My computers' OS, specs and maintenance automations, my software development
-            environment for coding various projects, and a graph of my home network.</p></li>
+            <li>
+              <div class="list-item">
+                <div class="point">[ My Github ]</div>
+                  <div>
+                  <p class="justify">
+                  My personal code respository and the place I can keep an eye on my favorite FOSS projects and tools.
+                  I haven't published all of the work I've done, but there's some here, regardless.
+                <p class="justify">My college work I am looking at
+                  declassifying in the near future, after taking measures for my personal safety and privacy,
+                  as my Github is very public, whereas this website is more private. I do have a handful of little things
+                  that are available to look at there, however.</p>
+                </div>
+              </div>
+            </li>
             
-            <li><div>[ My Github ]</div><p class="justify">
-            My personal code respository and the place I can keep an eye on my favorite FOSS projects and tools.
-            I haven't published all of the work I've done, but there's some here, regardless.
-          </p>
-          <div class="justify" style="
-            display: inline-flex;
-            max-width: 750px;
-            padding-left: 182.5px;
-            ">My college work I am looking at
-            declassifying in the near future, after taking measures for my personal safety and privacy,
-            as my Github is very public, whereas this website is more private. I do have a handful of little things
-            that are available to look at there, however.</div>
-        </li>
-            
-            <li><div>[ Repairs and Mods ]</div><p class="justify">
-            Examples of my work on physical hardware. PC building, manual overclocks, game console repair,
-            controller modding, soldering work, all that.</p></li>
-            <footer>
-              <p>Thank you for your time in stopping by.</p>
-            </footer>
-          </div>
-        </div> 
+            <li>
+              <div class="list-item">
+                <div class="point">[ Repairs and Mods ]</div>
+                <p class="justify">
+              Examples of my work on physical hardware. PC building, manual overclocks, game console repair,
+              controller modding, soldering work, all that.</p>
+              </div>
+            </li>
+          </div><!--end list-->
+          <footer>
+            <p>Thank you for your time in stopping by.</p>
+          </footer>
+          </div><!--end layout div-->
+        </div><!--end content-->
       </main>
     </div>
-
   </body>
 </html>
